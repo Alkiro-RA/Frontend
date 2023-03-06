@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <main>
+        <h1 id="title">WoW Classic Survey</h1>
+        <p>General survey about WoW Classic's experience</p>
+        <form id="survey-form">
+            <!-- Text Fields -->
+            <label id="email-label" for="email"> Email
+                <input id="email" type="email" required placeholder="example@example.com"> </label>
+            <label id="name-label" for="name"> Character's Name
+                <input id="name" type="text" required placeholder="nickname"> </label>
+            <label id="number-label" for="number"> Character's Level
+                <input id="number" type="number" min="1" max="60" placeholder="1-60"> </label>
+            <!-- Role -->
+            <label id="dropdown-label" for="dropdown"> Favorite role?
+                <select id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">Tank</option>
+                    <option value="2">Healer</option>
+                    <option value="3">Damage Dealer</option>
+                </select>
+            </label>
+            <!-- Alts -->
+            <label id="alts-label"> Are you an alts enjoyer?
+                <label id="yes-label" name="radio" for="alts">
+                    <input id="yes-radio" name="alts" type="radio"> Yes
+                </label>
+                <label id="no-label" name="radio" for="alts">
+                    <input id="no-radio" name="alts" type="radio"> No
+                </label>
+            </label>
+            <!-- Reasons -->
+            <label id="reason-label"> Reasons you play WoW Classic?
+                <label id="notalgia-label" for="nostalgia">
+                    <input id="nostalgia" type="checkbox" name="nostalgia-checkbox"> Nostalgia
+                </label>
+                <label id="community-label" for="community">
+                    <input id="community" type="checkbox" name="community-checkbox"> Community
+                </label>
+                <label id="accomplshment-label" for="accomplshment">
+                    <input id="accomplshment" type="checkbox" name="accomplshment-checkbox"> Sense of accomplshment
+                </label>
+                <label id="simplicity-label" for="simplicity">
+                    <input id="simplicity" type="checkbox" name="simplicity-checkbox"> Simplicity
+                </label>
+                <label id="immersion-label" for="immersion">
+                    <input id="immersion" type="checkbox" name="immersion-checkbox"> Immersion
+                </label>
+                <label id="pvp-label" for="pvp">
+                    <input id="pvp" type="checkbox" name="pvp-checkbox"> Player vs. Player
+                </label>
+            </label>
+            <!-- Best Memory -->
+            <label id="memory-label" for="memory"> What is your greatest memory you had in WoW?
+                <textarea id="memroy" name="memory-textarea" rows="4" cols="40"
+                    placeholder="That time tank ragequit our party..."></textarea>
+            </label>
+            <!-- Submit -->
+            <input type="submit" value="Submit" />
+        </form>
+    </main>
+</body>
+
+</html>
+
+<!--
+    ankieta związana z wowem classic
+    pola ankiety:
+    - nick main'a
+    - email
+    - level
+    - jak długo grasz wowa
+    - ulubiona rola
+        - tank
+        - heal
+        - dps
+    - czy robisz alty?
+        > tak
+        > nie
+    - powody dla których grasz w classic'a?
+        [] nostalgia
+        [] community
+        [] sense of accomplshment
+        [] simplicity
+        [] immersion
+        [] pvp
+    - najlepsze wspomnienie / najwieksze osiągniecie
+         ______________
+        |              |
+        |______________|
+-->
