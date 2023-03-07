@@ -14,56 +14,62 @@
         <p>General survey about WoW Classic's experience</p>
         <form id="survey-form">
             <!-- Text Fields -->
-            <label id="email-label" for="email"> Email
-                <input id="email" type="email" required placeholder="example@example.com"> </label>
-            <label id="name-label" for="name"> Character's Name
-                <input id="name" type="text" required placeholder="nickname"> </label>
-            <label id="number-label" for="number"> Character's Level
-                <input id="number" type="number" min="1" max="60" placeholder="1-60"> </label>
+            <fieldset>
+                <label id="email-label" for="email"> Email
+                    <input id="email" type="email" required placeholder="example@example.com"> </label>
+                <label id="name-label" for="name"> Character's Name
+                    <input id="name" type="text" required placeholder="nickname"> </label>
+                <label id="number-label" for="number"> Character's Level
+                    <input id="number" type="number" min="1" max="60" placeholder="1-60"> </label>
+            </fieldset>
             <!-- Role -->
-            <label id="dropdown-label" for="dropdown"> Favorite role?
-                <select id="dropdown">
-                    <option value="">(select one)</option>
-                    <option value="1">Tank</option>
-                    <option value="2">Healer</option>
-                    <option value="3">Damage Dealer</option>
-                </select>
-            </label>
-            <!-- Alts -->
-            <label id="alts-label"> Are you an alts enjoyer?
-                <label id="yes-label" name="radio" for="alts">
-                    <input id="yes-radio" name="alts" type="radio"> Yes
+            <fieldset>
+                <label id="dropdown-label" for="dropdown"> Favorite role?
+                    <select id="dropdown">
+                        <option value="">(select one)</option>
+                        <option value="1">Tank</option>
+                        <option value="2">Healer</option>
+                        <option value="3">Damage Dealer</option>
+                    </select>
                 </label>
-                <label id="no-label" name="radio" for="alts">
-                    <input id="no-radio" name="alts" type="radio"> No
+                <!-- Alts -->
+                <label id="alts-label"> Are you an alts enjoyer?
+                    <label id="yes-label" name="radio" for="alts">
+                        <input id="yes-radio" name="alts" type="radio" class="inline"> Yes
+                    </label>
+                    <label id="no-label" name="radio" for="alts">
+                        <input id="no-radio" name="alts" type="radio" class="inline"> No
+                    </label>
                 </label>
-            </label>
-            <!-- Reasons -->
-            <label id="reason-label"> Reasons you play WoW Classic?
-                <label id="notalgia-label" for="nostalgia">
-                    <input id="nostalgia" type="checkbox" name="nostalgia-checkbox"> Nostalgia
+                <!-- Reasons -->
+                <label id="reason-label"> Reasons you play WoW Classic?
+                    <label id="notalgia-label" for="nostalgia">
+                        <input id="nostalgia" type="checkbox" name="nostalgia-checkbox" class="inline"> Nostalgia
+                    </label>
+                    <label id="community-label" for="community">
+                        <input id="community" type="checkbox" name="community-checkbox" class="inline"> Community
+                    </label>
+                    <label id="accomplshment-label" for="accomplshment">
+                        <input id="accomplshment" type="checkbox" name="accomplshment-checkbox" class="inline"> Sense of accomplshment
+                    </label>
+                    <label id="simplicity-label" for="simplicity">
+                        <input id="simplicity" type="checkbox" name="simplicity-checkbox" class="inline"> Simplicity
+                    </label>
+                    <label id="immersion-label" for="immersion">
+                        <input id="immersion" type="checkbox" name="immersion-checkbox" class="inline"> Immersion
+                    </label>
+                    <label id="pvp-label" for="pvp">
+                        <input id="pvp" type="checkbox" name="pvp-checkbox" class="inline"> Player vs. Player
+                    </label>
                 </label>
-                <label id="community-label" for="community">
-                    <input id="community" type="checkbox" name="community-checkbox"> Community
+            </fieldset>
+            <fieldset>
+                <!-- Best Memory -->
+                <label id="memory-label" for="memory"> Your greatest memory from WoW?
+                    <textarea id="memroy" name="memory-textarea" rows="4" cols="40"
+                        placeholder="That time tank ragequit from party..."></textarea>
                 </label>
-                <label id="accomplshment-label" for="accomplshment">
-                    <input id="accomplshment" type="checkbox" name="accomplshment-checkbox"> Sense of accomplshment
-                </label>
-                <label id="simplicity-label" for="simplicity">
-                    <input id="simplicity" type="checkbox" name="simplicity-checkbox"> Simplicity
-                </label>
-                <label id="immersion-label" for="immersion">
-                    <input id="immersion" type="checkbox" name="immersion-checkbox"> Immersion
-                </label>
-                <label id="pvp-label" for="pvp">
-                    <input id="pvp" type="checkbox" name="pvp-checkbox"> Player vs. Player
-                </label>
-            </label>
-            <!-- Best Memory -->
-            <label id="memory-label" for="memory"> What is your greatest memory you had in WoW?
-                <textarea id="memroy" name="memory-textarea" rows="4" cols="40"
-                    placeholder="That time tank ragequit our party..."></textarea>
-            </label>
+            </fieldset>
             <!-- Submit -->
             <input type="submit" value="Submit" />
         </form>
