@@ -1,0 +1,25 @@
+body {
+    color: rgb(228, 236, 235);
+    font-size: 20px;
+    font-family: Georgia (serif);
+    background-color: rgb(178, 238, 218);
+
+}
+
+.app {
+    width: 20em;
+    height: 15em;
+    background-color: rgb(53, 99, 89);
+    border: 0.2em solid rgb(29, 48, 44);
+    margin: 30px auto 0px;
+}
+
+.task-container {
+    margin: 1em auto 0px;
+    border: 0.1em solid rgb(29, 48, 44);
+}
+
+th {
+    border-bottom: 0.1em solid rgb(29, 48, 44);
+}
+
